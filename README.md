@@ -27,6 +27,7 @@ This bundle is under the MIT license. See the complete license in the bundle:
 ## TODO
 
 Even if this bundle works perfectly in my professionnal application, I would like to :
+- add Symfony 7.0 support (soon)
 - bring back Travis CI to green
 - make phpunit tests works again
 
