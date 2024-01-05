@@ -1,7 +1,7 @@
 {
     "name": "klapaudius/oauth-server-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony OAuth Server Bundle",
+    "description": "Symfony(5.x to 7.x) OAuth Server Bundle",
     "keywords": ["oauth", "oauth2", "server"],
     "homepage": "https://github.com/klapaudius/FOSOAuthServerBundle",
     "license": "MIT",
@@ -23,11 +23,11 @@
         "php": "^8.0",
         "doctrine/doctrine-bundle": "~2.0",
         "klapaudius/oauth2-php": "~1.4",
-        "symfony/dependency-injection": "~6.0",
-        "symfony/form": "~6.0",
-        "symfony/framework-bundle": "~6.0",
-        "symfony/security-bundle": "~6.0",
-        "symfony/twig-bundle": "~6.0"
+        "symfony/dependency-injection": "~6.0|~7.0",
+        "symfony/form": "~6.0|~7.0",
+        "symfony/framework-bundle": "~6.0|~7.0",
+        "symfony/security-bundle": "~6.0|~7.0",
+        "symfony/twig-bundle": "~6.0|~7.0"
     },
     "require-dev": {
         "doctrine/mongodb-odm": "~2.0",
@@ -38,10 +38,10 @@
         "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "~9.0",
         "symfony/class-loader": "^2.0",
-        "symfony/console": "~6.0",
-        "symfony/phpunit-bridge": "~6.0",
-        "symfony/templating": "~6.0",
-        "symfony/yaml": "~6.0"
+        "symfony/console": "~6.0|~7.0",
+        "symfony/phpunit-bridge": "~6.0|~7.0",
+        "symfony/templating": "~6.0|~7.0",
+        "symfony/yaml": "~6.0|~7.0"
     },
     "support": {
         "issues": "https://github.com/klapaudius/FOSOAuthServerBundle/issues"
