@@ -1,7 +1,7 @@
 FOSOAuthServerBundle
 ====================
 
-#### Branches : 4.0 [![Build Status](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=4.0)](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=4.0) 3.0 [![Build Status](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=3.0)](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=3.0)
+#### Branches : 5.0 [![Build Status](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=5.0)](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=5.0) 4.0 [![Build Status](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=4.0)](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=4.0) 3.0 [![Build Status](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=3.0)](https://app.travis-ci.com/klapaudius/FOSOAuthServerBundle.svg?branch=3.0)
 
 
 ## Documentation
@@ -13,7 +13,7 @@ The bulk of the documentation is stored in the `Resources/doc/index.md` file in 
 ## Repository history
 
 This repository has been initialy created to remove the deprecated warnings on Symfony 4.2 since several pull requests were not reviewed on FriendsOfSymfony/FOSOAuthServerBundle.
-It is actively maintained and works on Symfony 5 (branch 3.0) and Symfony 6 (branch 4.0). Symfony 7 will come soon.
+It is actively maintained and works on Symfony 5 (branch 3.0) and Symfony 6 (branch 4.0). Symfony 7 (branch 5.0).
 
 Feel free to PR.
 
@@ -27,7 +27,6 @@ This bundle is under the MIT license. See the complete license in the bundle:
 ## TODO
 
 Even if this bundle works perfectly in my professionnal application, I would like to :
-- add Symfony 7.0 support (soon)
 - bring back Travis CI to green
 - make phpunit tests works again
 

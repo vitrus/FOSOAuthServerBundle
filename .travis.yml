@@ -2,8 +2,7 @@ language: php
 
 sudo: true
 php:
-  - 8.0
-  - 8.1
+  - 8.2
 
 service:
   - docker
@@ -12,10 +11,8 @@ service:
 matrix:
   fast_finish: true
   include:
-    - php: 8.0
-      env: SYMFONY_VERSION=6.0.*
-    - php: 8.1
-      env: SYMFONY_VERSION=6.0.*
+    - php: 8.2
+      env: SYMFONY_VERSION=7.0.*
 
 cache:
   directories:
