@@ -16,6 +16,7 @@ namespace FOS\OAuthServerBundle\Form\Model;
 /**
  * @author Chris Jones <leeked@gmail.com>
  */
+#[\AllowDynamicProperties]
 class Authorize
 {
     /**
