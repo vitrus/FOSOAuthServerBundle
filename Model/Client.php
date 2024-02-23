@@ -87,7 +87,7 @@ class Client implements ClientInterface
     /**
      * {@inheritdoc}
      */
-    public function checkSecret(string $secret): bool
+    public function checkSecret(?string $secret): bool
     {
         return null === $this->secret || $secret === $this->secret;
     }
