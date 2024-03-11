@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace FOS\OAuthServerBundle\Security\Authenticator;
 
 use FOS\OAuthServerBundle\Model\AccessToken;
-use FOS\OAuthServerBundle\Security\Authentication\Token\OAuthToken;
+use FOS\OAuthServerBundle\Security\Authenticator\Token\OAuthToken;
 use FOS\OAuthServerBundle\Security\Authenticator\Passport\Badge\AccessTokenBadge;
 use OAuth2\OAuth2;
 use OAuth2\OAuth2AuthenticateException;
