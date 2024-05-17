@@ -151,7 +151,7 @@ class OAuthStorage implements IOAuth2RefreshTokens, IOAuth2GrantUser, IOAuth2Gra
         }
 
         $encoder = $this->passwordHasherFactory->getPasswordHasher($user);
-        if ($user instanceof LegacyPasswordAuthenticatedUserInterface
+        if ($user instanceof \Symfony\Component\Security\Core\User\LegacyPasswordAuthenticatedUserInterface
             && $encoder->verify($user->getPassword(), $password, $user->getSalt())) {
             return [
                 'data' => $user,
