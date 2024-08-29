@@ -17,6 +17,8 @@ use Doctrine\ORM\EntityManagerInterface;
 use FOS\OAuthServerBundle\Model\AuthCodeInterface;
 use FOS\OAuthServerBundle\Model\AuthCodeManager as BaseAuthCodeManager;
 
+use function time;
+
 class AuthCodeManager extends BaseAuthCodeManager
 {
     /**
@@ -80,8 +82,8 @@ class AuthCodeManager extends BaseAuthCodeManager
         $qb = $repository->createQueryBuilder('a');
         $qb
             ->delete()
-            ->where('a.expiresAt < ?1')
-            ->setParameters([1 => time()])
+            ->where('a.expiresAt < :time')
+            ->setParameter('time', time())
         ;
 
         return $qb->getQuery()->execute();
