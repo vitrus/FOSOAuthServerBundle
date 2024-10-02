@@ -1,6 +1,4 @@
 
-{% block field_label %}
-{% apply spaceless %}
-    <label for="{{ id }}">{{ id|trans([], 'FOSOAuthServerBundle') }}</label>
-{% endapply %}
-{% endblock field_label %}
+{%- block field_label -%}
+<label for="{{ id }}">{{ id|trans([], 'FOSOAuthServerBundle') }}</label>
+{%- endblock field_label -%}
