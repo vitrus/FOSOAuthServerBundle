@@ -176,8 +176,8 @@ class AuthCodeManagerTest extends TestCase
 
         $queryBuilder
             ->expects($this->once())
-            ->method('setParameters')
-            ->with([1 => time()])
+            ->method('setParameter')
+            ->with('time', time())
             ->willReturn($queryBuilder)
         ;
 

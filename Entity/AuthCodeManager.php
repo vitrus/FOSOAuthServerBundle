@@ -80,8 +80,8 @@ class AuthCodeManager extends BaseAuthCodeManager
         $qb = $repository->createQueryBuilder('a');
         $qb
             ->delete()
-            ->where('a.expiresAt < ?1')
-            ->setParameters([1 => time()])
+            ->where('a.expiresAt < :time')
+            ->setParameter('time', time())
         ;
 
         return $qb->getQuery()->execute();

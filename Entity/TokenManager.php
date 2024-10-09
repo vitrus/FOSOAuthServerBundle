@@ -88,8 +88,8 @@ class TokenManager extends BaseTokenManager
         $qb = $this->repository->createQueryBuilder('t');
         $qb
             ->delete()
-            ->where('t.expiresAt < ?1')
-            ->setParameters([1 => time()])
+            ->where('t.expiresAt < :time')
+            ->setParameter('time', time())
         ;
 
         return $qb->getQuery()->execute();
