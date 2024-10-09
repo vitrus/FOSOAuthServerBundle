@@ -88,7 +88,7 @@ class CreateClientCommandTest extends TestCase
     /**
      * @return array
      */
-    public function clientProvider()
+    public static function clientProvider()
     {
         return [
             ['FOS\OAuthServerBundle\Document\Client'],

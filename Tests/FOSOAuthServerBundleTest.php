@@ -33,7 +33,7 @@ class FOSOAuthServerBundleTest extends \PHPUnit\Framework\TestCase
         /** @var ContainerBuilder|\PHPUnit_Framework_MockObject_MockObject $containerBuilder */
         $containerBuilder = $this->getMockBuilder(ContainerBuilder::class)
             ->disableOriginalConstructor()
-            ->setMethods([
+            ->onlyMethods([
                 'getExtension',
                 'addCompilerPass',
             ])
