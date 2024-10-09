@@ -1,3 +1,4 @@
+.phpunit.cache/
 phpunit.xml
 Tests/autoload.php
 reports/
