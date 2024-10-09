@@ -44,7 +44,7 @@ class GrantExtensionsCompilerPassTest extends \PHPUnit\Framework\TestCase
     {
         $container = $this->getMockBuilder(ContainerBuilder::class)
             ->disableOriginalConstructor()
-            ->setMethods([
+            ->onlyMethods([
                 'findDefinition',
                 'getParameterBag',
             ])
@@ -201,7 +201,7 @@ class GrantExtensionsCompilerPassTest extends \PHPUnit\Framework\TestCase
     {
         $container = $this->getMockBuilder(ContainerBuilder::class)
             ->disableOriginalConstructor()
-            ->setMethods([
+            ->onlyMethods([
                 'findDefinition',
                 'getParameterBag',
                 'findTaggedServiceIds',

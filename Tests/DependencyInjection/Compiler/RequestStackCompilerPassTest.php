@@ -39,7 +39,7 @@ class RequestStackCompilerPassTest extends \PHPUnit\Framework\TestCase
     {
         $this->container = $this->getMockBuilder(ContainerBuilder::class)
             ->disableOriginalConstructor()
-            ->setMethods([
+            ->onlyMethods([
                 'has',
                 'getDefinition',
             ])
