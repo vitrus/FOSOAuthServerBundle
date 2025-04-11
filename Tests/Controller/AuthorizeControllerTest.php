@@ -114,8 +114,7 @@ class AuthorizeControllerTest extends TestCase
             $this->eventDispatcher
         );
 
-        /** @var MockObject&Request $request */
-        $request = $this->getMockBuilder(Request::class)
+        $this->request = $this->getMockBuilder(Request::class)
             ->disableOriginalConstructor()
             ->getMock()
         ;
@@ -127,9 +126,6 @@ class AuthorizeControllerTest extends TestCase
             ->disableOriginalConstructor()
             ->getMock()
         ;
-        $request->query = $this->requestQuery;
-        $request->request = $this->requestRequest;
-        $this->request = $request;
         $this->user = $this->getMockBuilder(UserInterface::class)
             ->disableOriginalConstructor()
             ->getMock()
@@ -374,7 +370,6 @@ class AuthorizeControllerTest extends TestCase
             ->expects($this->exactly(1))
             ->method('set')
             ->with('_fos_oauth_server.ensure_logout', true)
-            ->willReturn(null)
         ;
 
         $propertyReflection = new ReflectionProperty(AuthorizeController::class, 'client');
@@ -426,6 +421,10 @@ class AuthorizeControllerTest extends TestCase
         $this->assertEquals($response, $this->instance->authorizeAction($this->request));
     }
 
+    /**
+     * @TODO Rewrite this test since Request::$query and Request::$request are now typed with final classes
+     *       Than can't be mocked anymore
+     */
     public function testAuthorizeActionWillProcessAuthorizationForm(): void
     {
         $token = $this->getMockBuilder(TokenInterface::class)

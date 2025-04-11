@@ -33,7 +33,7 @@ class BootTest extends TestCase
         }
     }
 
-    public function getTestBootData(): array
+    public static function getTestBootData(): array
     {
         return [
             ['orm'],

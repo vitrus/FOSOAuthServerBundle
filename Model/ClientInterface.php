@@ -23,7 +23,7 @@ interface ClientInterface extends IOAuth2Client
 
     public function setSecret(string $secret);
 
-    public function checkSecret(string $secret): bool;
+    public function checkSecret(?string $secret): bool;
 
     public function getSecret(): ?string;
 
