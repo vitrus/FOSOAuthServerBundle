@@ -59,8 +59,8 @@ class OAuthStorage implements IOAuth2RefreshTokens, IOAuth2GrantUser, IOAuth2Gra
         AccessTokenManagerInterface $accessTokenManager,
         RefreshTokenManagerInterface $refreshTokenManager,
         AuthCodeManagerInterface $authCodeManager,
-        UserProviderInterface $userProvider = null,
-        PasswordHasherFactoryInterface $passwordHasherFactory = null
+        ?UserProviderInterface $userProvider = null,
+        ?PasswordHasherFactoryInterface $passwordHasherFactory = null
     ) {
         $this->clientManager = $clientManager;
         $this->accessTokenManager = $accessTokenManager;

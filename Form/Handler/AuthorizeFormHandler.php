@@ -40,9 +40,9 @@ class AuthorizeFormHandler
     private $requestStack;
 
     /**
-     * @param Request|RequestStack $requestStack
+     * @param Request|RequestStack|null $requestStack
      */
-    public function __construct(FormInterface $form, $requestStack = null)
+    public function __construct(FormInterface $form, RequestStack|Request|null $requestStack = null)
     {
         if (null !== $requestStack && !$requestStack instanceof RequestStack && !$requestStack instanceof Request) {
             throw new \InvalidArgumentException(sprintf('Argument 2 of %s must be an instanceof RequestStack or Request', __CLASS__));
@@ -57,7 +57,7 @@ class AuthorizeFormHandler
      *
      * @param ContainerInterface|null $container A ContainerInterface instance or null
      */
-    public function setContainer(ContainerInterface $container = null)
+    public function setContainer(?ContainerInterface $container = null)
     {
         $this->container = $container;
     }
